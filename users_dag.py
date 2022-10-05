@@ -39,3 +39,5 @@ with DAG(
         task_id='save_users',
         python_callable=save_users
     )
+
+task_is_api_active >> task_get_users >> task_save
