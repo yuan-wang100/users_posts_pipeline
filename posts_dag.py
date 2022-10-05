@@ -39,3 +39,5 @@ with DAG(
         task_id='save_posts',
         python_callable=save_posts
     )
+
+ task_is_api_active >> task_get_posts >> task_save
